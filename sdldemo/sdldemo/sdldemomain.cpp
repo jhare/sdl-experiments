@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "sdldemomain.h"
 
-
 using namespace SDLDemo;
 
 SDLDemoMain::SDLDemoMain() {
@@ -11,12 +10,6 @@ SDLDemoMain::SDLDemoMain() {
 SDLDemoMain::~SDLDemoMain() {
 
 }
-
-
-int SDLDemoMain::onExecute() {
-	return 0;
-}
-
 
 int SDLDemoMain::Initialize() {
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER);
@@ -44,5 +37,14 @@ void SDLDemoMain::Render() {
 }
 
 bool SDLDemoMain::Events() {
+
+	SDL_Event event;
+	
+	if( SDL_PollEvent(&event) ) {
+		if( event.type  == SDL_QUIT ) {
+			return false;
+		}
+	}
+
 	return true;
 }

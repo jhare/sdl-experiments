@@ -11,53 +11,16 @@ namespace SDLDemo {
 
 	public:
 
-		/**
-		 *
-		 *
-		 */
 		SDLDemoMain();
 		  
-	/**
-	 *
-	 *
-	 */
-	~SDLDemoMain();
+		~SDLDemoMain();
 
-	/**
-	 *
-	 *
-	 */
-	int onExecute();
+		int Initialize();
+		int Shutdown();
 
-	/**
-	 *
-	 *
-	 */
-	int Initialize();
-		  
-	/**
-	 *
-	 *
-	 */
-	int Shutdown();
-
-	/**
-	 *
-	 *
-	 */
-	void Loop();
-	
-	/**
-	 *
-	 *
-	 */
-	void Render();
-	
-	/**
-	 *
-	 *
-	 */
-	bool Events();
+		void Loop();
+		void Render();
+		bool Events();
 
 
 	private:
