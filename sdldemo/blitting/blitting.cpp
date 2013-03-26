@@ -37,7 +37,7 @@ void blitScene( SDL_Surface* screen, SDL_Surface* ground, SDL_Surface* wall, SDL
 
     SDL_Rect robotDest;
     robotDest.x = 500;
-    robotDest.y = 634;
+    robotDest.y = groundDest.y - robot->h;
 
     SDL_SetColorKey( robot, SDL_SRCCOLORKEY, SDL_MapRGB(screen->format, 255, 255, 255) );
 

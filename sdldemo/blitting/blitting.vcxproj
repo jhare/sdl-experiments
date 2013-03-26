@@ -16,11 +16,6 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="E:\photo-workspace\mechgame\bmps\blue_mech.bmp" />
-    <Image Include="E:\photo-workspace\mechgame\bmps\green_wallpaper.bmp" />
-    <Image Include="E:\photo-workspace\mechgame\bmps\textured_glass_beige.bmp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{711B532C-5002-469C-9069-DB1078B2A1B7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
